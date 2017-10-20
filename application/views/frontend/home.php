@@ -21,7 +21,7 @@
                 <p class="lead">
                     por <a href="index.php">Um mano por ai</a>
                 </p>
-                <p><span class="glyphicon glyphicon-time"></span> Postado em 25 de Janeiro de 2017 10:00</p>
+                <p><span class="glyphicon glyphicon-time"></span><?php echo postadoem($postagem->data) ?></p>
                 <hr>
                 <img class="img-responsive" src="http://placehold.it/900x300" alt="">
                 <hr>
