@@ -15,6 +15,10 @@ class Home extends CI_Controller {
 		$dados['categorias'] = $this->categorias;
 		$this->load->model('publicacoes_model', 'modelpublicacoes');
 		$dados['postagens'] = $this->modelpublicacoes->destaques_home();
+
+		//dados a serem enviados para o Cabeçalho
+		$dados['titulo'] = 'Página Inicial';
+		$dados['subtitulo'] = 'Postagens Recentes';
 		$this->load->view('frontend/template/html-header', $dados);
 		$this->load->view('frontend/template/header');
 		$this->load->view('frontend/home');
